@@ -10,7 +10,7 @@ void print_table(int size)
 	{
 		printf("%d ", row * col);
 	}
-	printf("\n")
+	printf("\n");
 	}
 }
 
