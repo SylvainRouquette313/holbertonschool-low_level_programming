@@ -3,16 +3,16 @@
 /**
  * _puts - prints a string followed by a new line
  * @str: the string to print
+ *
+ * Return: nothing
  */
 void _puts(char *str)
 {
-	int i = 0;
+	int i;
 
-	while (str[i] != '\0')
-	{
-		_puts(str[i]);
-		i++;
-	}
-	_puts('\n');
+	for (i = 0; str[i] != '\0'; i++)
+		_putchar(str[i]);
+
+	_putchar('\n');
 }
 
