@@ -60,7 +60,15 @@ int main (void)
 			scanf("%d", &A);
 			printf("B: ");
 			scanf("%d", &B);
-			printf("Result: %d\n", A / B);
+				if (B == 0)
+				{
+					printf ("Error: division by zero");
+					printf ("\n");
+				}
+				else 
+				{
+					printf("Result: %f\n", (double)A / B);
+				}
 		}
 		else if(nombre >= 5 && nombre <= 9)
 		{
