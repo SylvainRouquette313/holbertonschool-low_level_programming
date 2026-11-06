@@ -40,15 +40,27 @@ int main (void)
 		}
 		else if(nombre == 2)
 		{
-			printf("substraction\n");
+			printf("A: ");
+			scanf ("%d", &A);
+			printf("B: ");
+			scanf ("%d", &B);
+			printf ("Result: %d\n", A - B);
 		}
 		else if(nombre == 3)
 		{
-			printf("multiplication\n");
+			printf("A: ");
+			scanf("%d", &A);
+			printf("B: ");
+			scanf("%d", &B);
+			printf("Result: %d\n", A * B);
 		}
 		else if(nombre == 4)
 		{
-			printf("division\n");
+			printf("A: ");
+			scanf("%d", &A);
+			printf("B: ");
+			scanf("%d", &B);
+			printf("Result: %d\n", A / B);
 		}
 		else if(nombre >= 5 && nombre <= 9)
 		{
