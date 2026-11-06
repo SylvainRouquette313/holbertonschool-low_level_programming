@@ -9,6 +9,9 @@
 int main (void)
 {
 	int nombre;
+	int A;
+	int B;
+
 
 	printf("hello, calculator is here!");
 	printf("\n");
@@ -26,10 +29,14 @@ int main (void)
 		{
 	printf("choice: ");
 	scanf("%d", &nombre);
-	
+
 	if (nombre == 1)
 		{
-			printf("addition\n");
+			printf ("A: ");
+			scanf ("%d", &A);
+			printf ("B: ");
+			scanf ("%d", &B);
+			printf("Result: %d\n", A + B);
 		}
 		else if(nombre == 2)
 		{
