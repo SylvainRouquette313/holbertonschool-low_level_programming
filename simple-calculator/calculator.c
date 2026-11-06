@@ -22,12 +22,35 @@ int main (void)
 	printf("\n");
 	printf("0) Quit");
 	printf("\n");
+	do
+		{
 	printf("choice: ");
 	scanf("%d", &nombre);
-	if (nombre == 0)
-	{
-		printf("bye");
-		printf("\n");
-	}
+	
+	if (nombre == 1)
+		{
+			printf("addition\n");
+		}
+		else if(nombre == 2)
+		{
+			printf("substraction\n");
+		}
+		else if(nombre == 3)
+		{
+			printf("multiplication\n");
+		}
+		else if(nombre == 4)
+		{
+			printf("division\n");
+		}
+		else if(nombre >= 5 && nombre <= 9)
+		{
+			printf("Invalid choice");
+			printf("\n");
+		}
+
+		}
+	while(nombre != 0);
+			printf("Bye!\n");
 	return (0);
 }
